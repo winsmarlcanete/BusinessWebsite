@@ -1,50 +1,130 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.nav {
+  width: 100%;
+  height: 100px;
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    padding: 10px 90px;
-    box-sizing: border-box;
-    background: rgba(0, 0, 0, 0.6);
-     
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 10px 90px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-.logo{
-    padding: 22px 20px;
-    float: left;
-    font-size: 35px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    font-family: Trebuchet MS;
-    
-    
+.logo {
+  padding: 22px 20px;
+  float: left;
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-family: Trebuchet MS;
 }
-nav ul{
-    list-style:none;
-    float: right;
-    margin: 0;
-    padding: 0;
-    display: flex;
+nav ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 nav ul li a {
-    line-height:80px;
-    color: #fff;
-    padding: 12px 30px;
-    text-decoration: none;
-    font-size: 14px;
-    text-transform: uppercase;
+  line-height: 80px;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 nav ul li a:hover {
-    background: rgba(0,0,0,0.7);
-    border-radius: 6px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 6px;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.middle {
+  padding: 100px 300px;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 200px;
+  border-radius: 16px;
+  margin: 0 12px 12px 0;
+  padding: 24px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.item img {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.item h3 {
+  width: 100%;
+  overflow: visible;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #35a7ff;
+}
+
+.bottom {
+  display: block;
+  margin-top: auto;
+}
+
+.price {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.button-cnt {
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  border-radius: 4px;
+  background-color: #35a7ff;
+  width: 100%;
+  height: 32px;
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #007fe0;
 }
