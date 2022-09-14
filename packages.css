@@ -1,198 +1,255 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
 }
 
-body{
-    overflow: scroll;
-    height: fit-content;
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
+body {
+  background-color: #212121;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 10px 90px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  padding: 22px 20px;
+  float: left;
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-family: Trebuchet MS;
+}
+nav ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li a {
+  line-height: 80px;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #35a7ff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 31px;
 }
 
 .container {
-    display: flex;
-    flex-wrap:wrap
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .image1 {
-    position: relative;
-    width: 400px;
-    margin: 50px;
+  position: relative;
+  width: 400px;
+  margin: 50px;
 }
 
-
 .image__img1 {
-    display: block;
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .image__overlay1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(109, 96, 96, 0.6);
-    color: #ffffff;
-    font-family: 'Quicksand', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(109, 96, 96, 0.6);
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 16px;
 }
 
 .image__overlay1--blur {
-    backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .image__overlay1--primary {
-    background: #4c504770;
+  background: #4c504770;
 }
 
 .image__overlay1 > * {
-    transform: translateY(20px);
-    transition: transform 0.25s;
+  transform: translateY(20px);
+  transition: transform 0.25s;
 }
 
 .image__overlay1:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .image__overlay1:hover > * {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .image__title1 {
-    font-size: 2em;
-    font-weight: bold;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .image__description1 {
-    font-size: 1.25em;
-    margin-top: 0.25em;
+  font-size: 1.25em;
+  margin-top: 0.25em;
 }
 
 .image2 {
-    position: relative;
-    width: 400px;
-    margin: 25px;
+  position: relative;
+  width: 400px;
+  margin: 25px;
 }
 
-
 .image__img2 {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .image__overlay2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(109, 96, 96, 0.6);
-    color: #ffffff;
-    font-family: 'Quicksand', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(109, 96, 96, 0.6);
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 16px;
 }
 
 .image__overlay2--blur {
-    backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .image__overlay2--primary {
-    background: #4c504770;
+  background: #4c504770;
 }
 
 .image__overlay2 > * {
-    transform: translateY(20px);
-    transition: transform 0.25s;
+  transform: translateY(20px);
+  transition: transform 0.25s;
 }
 
 .image__overlay2:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .image__overlay2:hover > * {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .image__title2 {
-    font-size: 2em;
-    font-weight: bold;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .image__description2 {
-    font-size: 1.25em;
-    margin-top: 0.25em;
+  font-size: 1.25em;
+  margin-top: 0.25em;
 }
 
 .image3 {
-    position: relative;
-    width: 400px;
-    margin: 25px;
+  position: relative;
+  width: 400px;
+  margin: 25px;
 }
 
-
 .image__img3 {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .image__overlay3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 92%;
-    background: rgba(109, 96, 96, 0.6);
-    color: #ffffff;
-    font-family: 'Quicksand', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 92%;
+  background: rgba(109, 96, 96, 0.6);
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 16px;
 }
 
 .image__overlay3--blur {
-    backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .image__overlay3--primary {
-    background: #4c504770;
+  background: #4c504770;
 }
 
 .image__overlay3 > * {
-    transform: translateY(20px);
-    transition: transform 0.25s;
+  transform: translateY(20px);
+  transition: transform 0.25s;
 }
 
 .image__overlay3:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .image__overlay3:hover > * {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .image__title3 {
-    font-size: 2em;
-    font-weight: bold;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .image__description3 {
-    font-size: 1.25em;
-    margin-top: 0.25em;
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+
+.container img {
+  border-radius: 16px;
+}
+
+.middle {
+  padding: 200px 200px 0 200px;
+  margin: 0 auto;
+}
+
+.body {
+  display: flex;
 }
