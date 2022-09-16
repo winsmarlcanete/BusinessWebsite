@@ -1,163 +1,82 @@
-@font-face {
-    font-family: 'Debug';
-    src: url(fonts/SpaceMission-rgyw9.otf);
-}
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    color: white;
-  }
-  
-  body {
-    background-color: #212121;
-  }
-  
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    padding: 10px 90px;
-    box-sizing: border-box;
-    background: rgba(0, 0, 0, 0.6);
-  }
-  
-  .logo {
-    padding: 22px 20px;
-    float: left;
-    font-size: 35px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    font-family: Trebuchet MS;
-  }
-  nav ul {
-    list-style: none;
-    float: right;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav ul li a {
-    line-height: 80px;
-    color: #fff;
-    padding: 12px 30px;
-    text-decoration: none;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-  
-  nav ul li a:hover {
-    color: #35a7ff;
-  }
-  
-  .Box {
-    height: 100vh;
-    background-image: url("background1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-  }
-  
-  .Inner_Box {
-    max-width: 650px;
-    position: relative;
-    display: block;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 30px;
-    text-align: center;
-    letter-spacing: 2px;
-    border-radius: 16px;
-  }
-  
-  .Inner_Box h1 {
-    font-family: 'Debug';
-    font-size: 110px;
-    color: #0e3742;
-    position: relative;
-    right: -13px;
-    text-transform: uppercase;
-    width: 100%;
-    text-align: center;
-    line-height: 0.70em;
-    outline: none;
-    animation: animate 3s linear infinite ;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    
-  }
-  @keyframes animate
-  {
-    0%
-    {
-        color: #000000;
-        text-shadow: none;
-    } 
-    100%
-    {
-        color: #fff;
-        text-shadow: 0 0 10px #03bcf4,
-        0 0 20px #03bcf4,
-        0 0 40px #03bcf4,
-        0 0 80px #03bcf4,
-        0 0 160px #03bcf4,
-    }
+  margin: 0;
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
 }
 
-  .Inner_Box p {
-    margin: 10px;
-    font-size: 22px;
+.Box {
+  height: 100vh;
+  background-image: url("Image/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Inner_Box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.Inner_Box h1 {
+  font-family: "VW";
+  font-style: italic;
+  font-size: 110px;
+  animation: animate 1s linear infinite;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+  0% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: none;
+  }
+  100% {
     color: #fff;
-  }  
-  .button-cnt {
-    width: 100%;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+      0 0 80px #03bcf4, 0 0 160px #03bcf4;
   }
-  
-  .button {
-    display: flex;
-    border-radius: 4px;
-    background-color: #35a7ff;
-    border-color: #35a7ff;
-    border-style: solid;
-    width: 130px;
-    height: 32px;
-    color: white;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out;
-    margin: auto;
-    margin-bottom: 15px;
-  }
-  
-  .button:hover {
-    background-color: #007fe0;
-    border-color: #007fe0;
-  }
-  
-  .button2 {
-    display: flex;
-    border-radius: 4px;
-    border-color: #35a7ff;
-    border-style: solid;
-    width: 130px;
-    height: 32px;
-    color: white;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out;
-    margin: auto;
-    margin-bottom: 15px;
-  }
-  
-  .button2:hover {
-    background-color: #007fe0;
-    border-color: #007fe0;
-  }
+}
+
+.Inner_Box p {
+  margin: 100px 0 80px 0;
+  font-size: 46px;
+  color: #fff;
+}
+
+.button-cnt {
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  border: 2px solid white;
+  border-radius: 4px;
+  width: 230px;
+  height: 40px;
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  margin: auto;
+  margin-bottom: 20px;
+  font-family: "VW";
+  letter-spacing: 1px;
+}
+
+.bottom {
+  margin-bottom: 0px;
+}
+
+.button2 {
+  background-color: white;
+}
+
+.button:hover {
+  background-color: #007fe0;
+  border-color: #007fe0;
+}

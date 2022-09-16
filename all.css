@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+@font-face {
+  font-family: "Debug";
+  src: url(fonts/SpaceMission-rgyw9.otf);
+}
+
+@font-face {
+  font-family: "VW";
+  src: url(fonts/Vampire\ Wars.otf);
+}
+@font-face {
+  font-family: "VW";
+  src: url(fonts/Vampire\ Wars\ Italic.otf);
+  font-style: italic;
+}
+
+body {
+  background-color: #212121;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+}
+
+nav ul {
+  list-style: none;
+  display: table;
+}
+
+nav ul li {
+  display: inline-block;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+nav ul li a {
+  font-family: "VW";
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  padding: 12px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #35a7ff;
+}
+
+.sbar {
+  border-radius: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.sbar button {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+#search {
+  border-radius: 25px;
+  border-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  padding-left: 5px;
+}
+
+.user-cnt {
+  position: relative;
+  display: inline-block;
+}
+
+.user {
+  padding-top: 5px;
+  opacity: 0.5;
+}
+
+.user2 {
+  padding-top: 5px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.user-cnt:hover .user2 {
+  display: inline;
+}
