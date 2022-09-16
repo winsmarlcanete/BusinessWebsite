@@ -55,9 +55,10 @@
   
   .Box {
     height: 100vh;
-    background-image: url(Image/"background1.jpg");
+    background-image: url("background1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    
   }
   
   .Inner_Box {
@@ -75,7 +76,7 @@
   
   .Inner_Box h1 {
     font-family: 'Debug';
-    font-size: 100px;
+    font-size: 110px;
     color: #0e3742;
     position: relative;
     text-transform: uppercase;
@@ -108,15 +109,9 @@
 
   .Inner_Box p {
     margin: 10px;
-    font-size: 20px;
+    font-size: 25px;
     color: #fff;
-  }
-  
-  .description {
-    text-align: justify;
-    font-size: medium;
-  }
-  
+  }  
   .button-cnt {
     width: 100%;
   }
