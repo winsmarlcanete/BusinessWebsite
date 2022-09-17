@@ -8,18 +8,23 @@
 }
 
 .login-box {
-  width: 250px;
+  width: 430px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
+  background-color: #191919;
+  border-radius: 16px;
+  padding: 50px;
 }
 .login-box h1 {
   float: left;
-  border-bottom: 6px solid #f5f5f5;
-  margin-bottom: 40px;
+  border-bottom: 6px solid white;
+  margin-bottom: 20px;
   padding: 13px 0;
+  font-family: "VW";
+  letter-spacing: 1px;
 }
 .textbox {
   width: 100%;
@@ -27,7 +32,7 @@
   font-size: 15px;
   padding: 8px 0;
   margin: 8px 0;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid white;
 }
 .textbox i {
   width: 26px;
@@ -47,13 +52,32 @@
 .btn {
   width: 100%;
   background: none;
-  border: 2px solid #f5f5f5;
+  border: 2px solid white;
   color: white;
   padding: 5px;
   font-size: 18px;
   cursor: pointer;
   margin: 12px 0;
+  transition: all 0.2s ease-in-out;
+  border-radius: 4px;
 }
+
+.btn:hover {
+  background-color: #35a7ff;
+  border-color: #35a7ff;
+}
+
 .login-box p {
   font-size: 18px;
+}
+
+p {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.a-blue {
+  color: #35a7ff;
+  text-decoration: none;
+  opacity: 1;
 }

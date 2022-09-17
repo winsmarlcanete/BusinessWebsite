@@ -72,11 +72,7 @@
   margin-bottom: 0px;
 }
 
-.button2 {
-  background-color: white;
-}
-
 .button:hover {
-  background-color: #007fe0;
-  border-color: #007fe0;
+  background-color: #35a7ff;
+  border-color: #35a7ff;
 }

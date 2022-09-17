@@ -1,9 +1,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Register form</title>
+    <title>Pee See - Register</title>
     <link rel="stylesheet" href="all.css" />
     <link rel="stylesheet" href="signup.css" />
+    <link rel="icon" href="fav.svg" />
     <link
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
@@ -39,7 +40,7 @@
     </header>
     <br />
     <div class="login-box">
-      <h1>Register Your Account</h1>
+      <h1>REGISTER YOUR ACCOUNT</h1>
 
       <div class="textbox">
         <i class="fa fa-user" aria-hidden="true"></i>
@@ -68,22 +69,22 @@
       </div>
       <input class="btn" type="button" value="Sign up" />
       <p>
-        have an Account Already?
-        <a href="signin.html" target="_blank">Sign in</a>
+        Have an account already?
+        <a href="signin.html" class="a-blue">Sign in</a>
       </p>
     </div>
     <script>
       document.querySelector(".btn").onclick = function () {
-        var password = document.querySelector(".password").value,
-          confirmpassword = document.querySelector(".confirmpassword").value;
+        var password = document.querySelector(".password").value;
+        var confirmpassword = document.querySelector(".confirmpassword").value;
 
         if (password == "") {
           alert("Field cannot be empty");
         } else if (password != confirmpassword) {
-          alert("passowrd didn't match try again");
+          alert("Password didn't match, try again.");
           return false;
         } else if (password == confirmpassword) {
-          alert("passowrd match");
+          location.replace("home.html");
         }
         return true;
       };
