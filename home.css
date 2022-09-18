@@ -24,7 +24,7 @@
   font-family: "VW";
   font-style: italic;
   font-size: 110px;
-  animation: animate 1s linear infinite;
+  animation: animate 3s linear infinite;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
