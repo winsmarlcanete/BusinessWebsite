@@ -1,4 +1,4 @@
-Academic Work - Group 
+Academic Work - Group ✍️
 
 1st Sem 2022
 
@@ -26,4 +26,4 @@ What I Learned:
 Note:
 
    Our school did not sponsor GitHub nor recommended to us. I just suggested this to our group since it can enhance our productivity.
-   Also, I have no idea how to deploy this. But I can be viewed via https://htmlpreview.github.io/ (Just paste the html link of the page).
+   Also, I have no idea how to deploy this. But I can be viewed via https://htmlpreview.github.io/ (Just paste the html link of home.html).
